@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<head>
+<meta charset="UTF-8" />
+<title>List of unique axes - Path of Exile Wiki</title>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"UAcAUlNACQoAXVVbDw=="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,a){t&&t(e,n,a),a||(a={});for(var c=s(e),f=c.length,u=i(a,o,r),d=0;f>d;d++)c[d].apply(u,n);return u}function a(t,e){f[t]=s(t).concat(e)}function s(t){return f[t]||[]}function c(){return n(e)}var f={};return{on:a,emit:e,create:c,listeners:s,_events:f}}function r(){return{}}var o="nr@context",i=t("gos");e.exports=n()},{gos:"7eSDFh"}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t){function e(t){try{i.console&&console.log(t)}catch(e){}}var n,r=t("ee"),o=t(1),i={};try{n=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(i.console=!0,-1!==n.indexOf("dev")&&(i.dev=!0),-1!==n.indexOf("nr_dev")&&(i.nrDev=!0))}catch(a){}i.nrDev&&r.on("internal-error",function(t){e(t.stack)}),i.dev&&r.on("fn-err",function(t,n,r){e(r.stack)}),i.dev&&(e("NR AGENT IN DEVELOPMENT MODE"),e("flags: "+o(i,function(t){return t}).join(", ")))},{1:23,ee:"QJf3ax"}],4:[function(t){function e(t,e,n,i,s){try{c?c-=1:r("err",[s||new UncaughtException(t,e,n)])}catch(f){try{r("ierr",[f,(new Date).getTime(),!0])}catch(u){}}return"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(6),i=t("ee"),a=window.onerror,s=!1,c=0;t("loader").features.err=!0,t(5),window.onerror=e;try{throw new Error}catch(f){"stack"in f&&(t(1),t(2),"addEventListener"in window&&t(3),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)&&t(4),s=!0)}i.on("fn-start",function(){s&&(c+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&c>0&&(c-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:10,2:9,3:7,4:11,5:3,6:24,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],5:[function(t){t("loader").features.ins=!0},{loader:"G9z0Bl"}],6:[function(t){function e(){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var n=t("ee"),r=t("handle"),o=t(1),i=t(2);t("loader").features.stn=!0,t(3),n.on("fn-start",function(t){var e=t[0];e instanceof Event&&(this.bstStart=Date.now())}),n.on("fn-end",function(t,e){var n=t[0];n instanceof Event&&r("bst",[n,e,this.bstStart,Date.now()])}),o.on("fn-start",function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),o.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),this.bstType])}),i.on("fn-start",function(){this.bstStart=Date.now()}),i.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),n.on("pushState-start",function(){this.time=Date.now(),this.startPath=location.pathname+location.hash}),n.on("pushState-end",function(){r("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),"addEventListener"in window.performance&&(window.performance.addEventListener("webkitresourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.webkitClearResourceTimings()},!1),window.performance.addEventListener("resourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.clearResourceTimings()},!1)),document.addEventListener("scroll",e,!1),document.addEventListener("keypress",e,!1),document.addEventListener("click",e,!1)}},{1:10,2:9,3:8,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],7:[function(t,e){function n(t){i.inPlace(t,["addEventListener","removeEventListener"],"-",r)}function r(t){return t[1]}var o=(t(1),t("ee").create()),i=t(2)(o),a=t("gos");if(e.exports=o,n(window),"getPrototypeOf"in Object){for(var s=document;s&&!s.hasOwnProperty("addEventListener");)s=Object.getPrototypeOf(s);s&&n(s);for(var c=XMLHttpRequest.prototype;c&&!c.hasOwnProperty("addEventListener");)c=Object.getPrototypeOf(c);c&&n(c)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&n(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t){if(t[1]){var e=t[1];"function"==typeof e?this.wrapped=t[1]=a(e,"nr@wrapped",function(){return i(e,"fn-",null,e.name||"anonymous")}):"function"==typeof e.handleEvent&&i.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:24,2:25,ee:"QJf3ax",gos:"7eSDFh"}],8:[function(t,e){var n=(t(2),t("ee").create()),r=t(1)(n);e.exports=n,r.inPlace(window.history,["pushState"],"-")},{1:25,2:24,ee:"QJf3ax"}],9:[function(t,e){var n=(t(2),t("ee").create()),r=t(1)(n);e.exports=n,r.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=r(t[0],"fn-")})},{1:25,2:24,ee:"QJf3ax"}],10:[function(t,e){function n(t,e,n){t[0]=o(t[0],"fn-",null,n)}var r=(t(2),t("ee").create()),o=t(1)(r);e.exports=r,o.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",n)},{1:25,2:24,ee:"QJf3ax"}],11:[function(t,e){function n(){f.inPlace(this,p,"fn-")}function r(t,e){f.inPlace(e,["onreadystatechange"],"fn-")}function o(t,e){return e}function i(t,e){for(var n in t)e[n]=t[n];return e}var a=t("ee").create(),s=t(1),c=t(2),f=c(a),u=c(s),d=window.XMLHttpRequest,p=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];e.exports=a,window.XMLHttpRequest=function(t){var e=new d(t);try{a.emit("new-xhr",[],e),u.inPlace(e,["addEventListener","removeEventListener"],"-",o),e.addEventListener("readystatechange",n,!1)}catch(r){try{a.emit("internal-error",[r])}catch(i){}}return e},i(d,XMLHttpRequest),XMLHttpRequest.prototype=d.prototype,f.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",o),a.on("send-xhr-start",r),a.on("open-xhr-start",r)},{1:7,2:25,ee:"QJf3ax"}],12:[function(t){function e(t){var e=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;c>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!e.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var a=t.responseType,f="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,u=n(f);if(u&&(r.rxSize=u),this.sameOrigin){var d=t.getResponseHeader("X-NewRelic-App-Data");d&&(e.cat=d.split(", ").pop())}}else e.status=0;r.cbTime=this.cbTime,o("xhr",[e,r,this.startTime])}}}function n(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}if(window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)){t("loader").features.xhr=!0;var o=t("handle"),i=t(2),a=t("ee"),s=["load","error","abort","timeout"],c=s.length,f=t(1);t(4),t(3),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=e,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,e){var r=this.metrics,o=t[0],i=this;if(r&&o){var f=n(o);f&&(r.txSize=f)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof e.onload))&&i.end(e)}catch(n){try{a.emit("internal-error",[n])}catch(r){}}};for(var u=0;c>u;u++)e.addEventListener(s[u],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{1:"XL7HBI",2:13,3:11,4:7,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],13:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],14:[function(t,e){function n(t){return function(){r(t,[(new Date).getTime()].concat(i(arguments)))}}var r=t("handle"),o=t(1),i=t(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(t,e){window.NREUM[e]=n("api-"+e)}),e.exports=window.NREUM},{1:23,2:24,handle:"D5DuLP"}],"7eSDFh":[function(t,e){function n(t,e,n){if(r.call(t,e))return t[e];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return t[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],gos:[function(t,e){e.exports=t("7eSDFh")},{}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):(o[t]||(o[t]=[]),void o[t].push(e))}var r=t("ee").create(),o={};e.exports=n,n.ee=r,r.q=o},{ee:"QJf3ax"}],id:[function(t,e){e.exports=t("XL7HBI")},{}],XL7HBI:[function(t,e){function n(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:i(t,o,function(){return r++})}var r=1,o="nr@id",i=t("gos");e.exports=n},{gos:"7eSDFh"}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info,e=f.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){s(d,function(e,n){e in t||(t[e]=n)});var n="https"===u.split(":")[0]||t.sslForHttp;p.proto=n?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=p.proto+t.agent,e.parentNode.insertBefore(r,e)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=t(1),c=(t(2),window),f=c.document,u=(""+location).split("?")[0],d={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-632.min.js"},p=e.exports={offset:i(),origin:u,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),c.addEventListener("load",n,!1)):(f.attachEvent("onreadystatechange",r),c.attachEvent("onload",n)),a("mark",["firstbyte",i()])},{1:23,2:14,handle:"D5DuLP"}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],23:[function(t,e){function n(t,e){var n=[],o="",i=0;for(o in t)r.call(t,o)&&(n[i]=e(o,t[o]),i+=1);return n}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],24:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],25:[function(t,e){function n(t){return!(t&&"function"==typeof t&&t.apply&&!t[i])}var r=t("ee"),o=t(1),i="nr@wrapper",a=Object.prototype.hasOwnProperty;e.exports=function(t){function e(t,e,r,a){function nrWrapper(){var n,i,s,f;try{i=this,n=o(arguments),s=r&&r(n,i)||{}}catch(d){u([d,"",[n,i,a],s])}c(e+"start",[n,i,a],s);try{return f=t.apply(i,n)}catch(p){throw c(e+"err",[n,i,p],s),p}finally{c(e+"end",[n,i,f],s)}}return n(t)?t:(e||(e=""),nrWrapper[i]=!0,f(t,nrWrapper),nrWrapper)}function s(t,r,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<r.length;c++)s=r[c],a=t[s],n(a)||(t[s]=e(a,f?s+o:o,i,s))}function c(e,n,r){try{t.emit(e,n,r)}catch(o){u([o,e,n,r])}}function f(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){u([r])}for(var o in t)a.call(t,o)&&(e[o]=t[o]);return e}function u(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=r),e.inPlace=s,e.flag=i,e}},{1:24,ee:"QJf3ax"}]},{},["G9z0Bl",4,12,6,5]);</script>
+<meta name="generator" content="MediaWiki 1.23.9" />
+<meta name="og:title" content="List of unique axes" />
+<meta name="og:type" content="website" />
+<meta name="og:image" content="http://hydra-media.cursecdn.com/pathofexile.gamepedia.com/b/bc/Wiki.png" />
+<meta name="og:url" content="http://pathofexile.gamepedia.com/List_of_unique_axes" />
+<meta name="og:site_name" content="Path of Exile Wiki" />
+<link rel="apple-touch-icon" href="" />
+<link rel="shortcut icon" href="http://hydra-media.cursecdn.com/pathofexile.gamepedia.com/6/64/Favicon.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="/opensearch_desc.php" title="Path of Exile Wiki (en)" />
+<link rel="EditURI" type="application/rsd+xml" href="//pathofexile.gamepedia.com/api.php?action=rsd" />
+<link rel="copyright" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" />
+<link rel="alternate" type="application/atom+xml" title="Path of Exile Wiki Atom feed" href="/index.php?title=Special:RecentChanges&amp;feed=atom" />
+<link rel="stylesheet" href="//pathofexile.gamepedia.com/load.php?debug=false&amp;lang=en&amp;modules=ext.curse.footer%2Cnetbar%7Cext.visualEditor.viewPageTarget.noscript%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.interface%7Cmediawiki.ui.button%7Cskins.vector.styles%7Cz.skins.hydra&amp;only=styles&amp;skin=hydra&amp;*" />
+<!--[if lt IE 10]><link rel="stylesheet" href="http://hydra-media.cursecdn.com/hydra/ie.css" media="screen" /><![endif]--><meta name="ResourceLoaderDynamicStyles" content="" />
+<link rel="stylesheet" href="//pathofexile.gamepedia.com/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=hydra&amp;*" />
+<style>a:lang(ar),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}
+/* cache key: pathofexile_gamepedia:resourceloader:filter:minify-css:7:4bb53f61038d1d0c8076eab7dc0679ac */</style>
+<script src="//pathofexile.gamepedia.com/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=hydra&amp;*"></script>
+<script>if(window.mw){
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"List_of_unique_axes","wgTitle":"List of unique axes","wgCurRevisionId":138025,"wgRevisionId":138025,"wgArticleId":2169,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Unique axes","Item lists"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"List_of_unique_axes","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgVectorEnabledModules":{"collapsiblenav":true,"experiments":true},"wgVisualEditor":{"isPageWatched":false,"magnifyClipIconURL":"/skins/common/images/magnify-clip.png","pageLanguageCode":"en","pageLanguageDir":"ltr","svgMaxSize":2048},"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"hidesig":true,"preview":true,"previewDialog":false,"publish":true},"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}"});
+}</script><script>if(window.mw){
+mw.loader.implement("user.options",function($,jQuery){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"editfont":"default","editondblclick":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":1,"extendwatchlist":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nickname":"","norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"rcdays":7,"rclimit":50,"rows":25,"showhiddencats":0,"shownumberswatching":1,"showtoolbar":1,"skin":"hydra","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":1,"watchdefault":1,"watchdeletion":0,"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,
+"useeditwarning":1,"prefershttps":false,"visualeditor-enable":1,"usebetatoolbar":1,"usebetatoolbar-cgd":1,"wikieditor-preview":1,"wikieditor-publish":1,"visualeditor-enable-experimental":0,"visualeditor-betatempdisable":0,"profile-pref":1,"hydra-simplesearch":true,"echo-notify-show-link":true,"echo-show-alert":true,"echo-email-frequency":0,"echo-email-format":"plain-text","echo-subscriptions-email-system":true,"echo-subscriptions-web-system":true,"echo-subscriptions-email-user-rights":true,"echo-subscriptions-web-user-rights":true,"echo-subscriptions-email-other":false,"echo-subscriptions-web-other":true,"echo-subscriptions-email-edit-user-talk":false,"echo-subscriptions-web-edit-user-talk":true,"echo-subscriptions-email-reverted":false,"echo-subscriptions-web-reverted":true,"echo-subscriptions-email-article-linked":false,"echo-subscriptions-web-article-linked":false,"echo-subscriptions-email-mention":false,"echo-subscriptions-web-mention":true,"language":"en","variant-gan":"gan",
+"variant-iu":"iu","variant-kk":"kk","variant-ku":"ku","variant-shi":"shi","variant-sr":"sr","variant-tg":"tg","variant-uz":"uz","variant-zh":"zh","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"searchNs200":false,"searchNs202":false,"searchNs710":false,"searchNs711":false,"searchNs828":false,"searchNs829":false,"echo-subscriptions-web-friendship":1,"echo-subscriptions-email-friendship":1,"echo-subscriptions-web-profile-comment":1,"echo-subscriptions-email-profile-comment":1,"variant":"en"});},{},{});mw.loader.implement("user.tokens",function($,jQuery){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});},{},{});
+/* cache key: pathofexile_gamepedia:resourceloader:filter:minify-js:7:4e32a448b22b8732931c8f49a9b12857 */
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax","ext.siteGlobals","ext.claimWiki","ext.visualEditor.viewPageTarget.init","skins.vector.js"]);
+}</script>
+<link rel="alternate" hreflang="de" href="pathofexile-de.gamepedia.com" /><link rel="alternate" hreflang="fr" href="pathofexile-fr.gamepedia.com" /><link rel="alternate" hreflang="ru" href="pathofexile-ru.gamepedia.com" /><meta itemprop="author" content="Gamepedia" /><!--[if lt IE 7]><style type="text/css">body{behavior:url("/skins/hydra/csshover.min.htc")}</style><![endif]--><script>
+var script = document.createElement('script');
+var tstamp = new Date();
+script.id = 'factorem';
+script.src = 'http://cdm.cursecdn.com/js/gamepedia/cdmfactorem_min.js?misc=' + tstamp.getTime();
+script.async = false;
+script.type='text/javascript';
+document.head.appendChild(script);
+</script> </head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-List_of_unique_axes skin-hydra action-view vector-animateLayout show-ads site-pathofexile-gamepedia">
+<div id="netbar">
+	<ul class="netbar-left">
+		<li><a class="curse" href="http://www.gamepedia.com">Gamepedia</a></li>
+					<li><a href="http://support.curse.com/">Help</a></li>
+					</ul>
+	<ul class="netbar-right">
+							<li><a href="/index.php?title=Special:UserLogin&returnto=List+of+unique+axes" id="login-link">Sign In</a></li>
+							<li><a href="/index.php?title=Special:UserLogin&returnto=List+of+unique+axes&type=signup" id="register-link">Register</a></li>
+						</ul>
+</div>
+	<div id="global-wrapper">
+		<div id="mw-navigation">
+			<div id="mw-page-base" class="noprint"></div>
+			<div id="mw-head">
+				<!--<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+	<h3 id="p-personal-label">Personal tools</h3>
+	<ul>
+<li id="pt-createaccount"><a href="/index.php?title=Special:UserLogin&amp;returnto=List+of+unique+axes&amp;type=signup">Create account</a></li><li id="pt-login"><a href="/index.php?title=Special:UserLogin&amp;returnto=List+of+unique+axes" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>	</ul>
+</div>-->
+				<div id="left-navigation">
+					<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+	<h3 id="p-namespaces-label">Namespaces</h3>
+	<ul>
+					<li  id="ca-nstab-main" class="selected"><span><a href="/List_of_unique_axes"  title="View the content page [c]" accesskey="c">Page</a></span></li>
+					<li  id="ca-talk" class="new"><span><a href="/index.php?title=Talk:List_of_unique_axes&amp;action=edit&amp;redlink=1"  title="Discussion about the content page [t]" accesskey="t">Discussion</a></span></li>
+			</ul>
+</div>
+<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+	<h3 id="mw-vector-current-variant">
+		</h3>
+	<h3 id="p-variants-label"><span>Variants</span><a href="#"></a></h3>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+<div id="p-sharing" role="sharing" class="vectorMenu" aria-labelledby="p-sharing-label">
+	<h4>Share</h4>
+	<h3 id="p-sharing-label"><span>Share</span><a href="#"></a></h3>
+	<div class="menu">
+		<ul>
+							<li>
+				<div id="socialIconImages">
+					<a href="https://twitter.com/intent/tweet?text=Check+out+List+of+unique+axes+on+Path+of+Exile+Wiki+--&via=CurseGamepedia&url=http%3A%2F%2Fpathofexile.gamepedia.com%2FList_of_unique_axes" target="_blank"><img src="/extensions/Social/images/square_icons/twitter.png"/></a><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fpathofexile.gamepedia.com%2FList_of_unique_axes" target="_blank"><img src="/extensions/Social/images/square_icons/facebook.png"/></a><a href="https://plus.google.com/share?url=http%3A%2F%2Fpathofexile.gamepedia.com%2FList_of_unique_axes" target="_blank"><img src="/extensions/Social/images/square_icons/googleplus.png"/></a><a href="http://www.reddit.com/submit?url=http%3A%2F%2Fpathofexile.gamepedia.com%2FList_of_unique_axes&title=Check+out+List+of+unique+axes+on+Path+of+Exile+Wiki+via+%40CurseGamepedia%3A+http%3A%2F%2Fpathofexile.gamepedia.com%2FList_of_unique_axes" target="_blank"><img src="/extensions/Social/images/square_icons/reddit.png"/></a><a href="http://www.tumblr.com/share/link?url=http%3A%2F%2Fpathofexile.gamepedia.com%2FList_of_unique_axes&name=Path+of+Exile+Wiki&description=Check+out+List+of+unique+axes+on+Path+of+Exile+Wiki+via+%3Ca+href%3D%22https%3A%2F%2Ftwitter.com%2FCurseGamepedia%22+target%3D%22_blank%22%3E%40CurseGamepedia%3C%2Fa%3E%3A+http%3A%2F%2Fpathofexile.gamepedia.com%2FList_of_unique_axes" target="_blank"><img src="/extensions/Social/images/square_icons/tumblr.png"/></a>
+				</div>
+</li>
+					</ul>
+	</div>
+</div>
+				</div>
+				<div id="right-navigation">
+					<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+	<h3 id="p-views-label">Views</h3>
+	<ul>
+					<li id="ca-view" class="selected"><span><a href="/List_of_unique_axes" >View</a></span></li>
+					<li id="ca-viewsource"><span><a href="/index.php?title=List_of_unique_axes&amp;action=edit"  title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></span></li>
+					<li id="ca-history" class="collapsible"><span><a href="/index.php?title=List_of_unique_axes&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">History</a></span></li>
+			</ul>
+</div>
+<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+	<h3 id="p-cactions-label"><span>Actions</span><a href="#"></a></h3>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+<div id="p-search" role="search">
+	<h3><label for="searchInput">Search</label></h3>
+	<form action="/index.php" id="searchform">
+					<div id="simpleSearch">
+					<input type="search" name="search" placeholder="Search" title="Search Path of Exile Wiki [f]" accesskey="f" id="searchInput" /><input type="hidden" value="Special:Search" name="title" /><input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton" /><input type="submit" name="go" value="Go" title="Go to a page with this exact name if exists" id="searchButton" class="searchButton" />		</div>
+	</form>
+</div>
+				</div>
+			</div>
+			<div id="mw-panel" class="noprint">
+				<div id="p-logo"><a href="/Path_of_Exile_Wiki"  title="Visit the main page"><img src="http://hydra-media.cursecdn.com/pathofexile.gamepedia.com/b/bc/Wiki.png?version=ea303ffc3755de0a27e1240c0655e5d1"/></a></div>
+				<!-- <div id="p-portals"> -->
+					<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+	<h3 id='p-navigation-label'>Navigation</h3>
+	<div class="body">
+		<ul>
+			<li id="n-mainpage-description"><a href="/Path_of_Exile_Wiki" title="Visit the main page [z]" accesskey="z">Main page</a></li>
+			<li id="n-portal"><a href="/Path_of_Exile_Wiki:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li>
+			<li id="n-recentchanges"><a href="/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+			<li id="n-randompage"><a href="/Special:Random" title="Load a random page [x]" accesskey="x">Random page</a></li>
+			<li id="n-Admin-noticeboard"><a href="/Path_of_Exile_Wiki:Admin_noticeboard">Admin noticeboard</a></li>
+		</ul>
+	</div>
+</div>
+<div class="portal" role="navigation" id='p-Fan_Portal' aria-labelledby='p-Fan_Portal-label'>
+	<h3 id='p-Fan_Portal-label'>Fan Portal</h3>
+	<div class="body">
+		<ul>
+			<li id="n-Official-Website"><a href="http://www.pathofexile.com/" rel="nofollow" target="_blank">Official Website</a></li>
+			<li id="n-Character-Builds"><a href="http://pathofpoe.com/" target="_blank">Character Builds</a></li>
+			<li id="n-Shop-Tool"><a href="https://code.google.com/p/procurement/" rel="nofollow" target="_blank">Shop Tool</a></li>
+			<li id="n-Market-Browser"><a href="http://poe.trade" rel="nofollow" target="_blank">Market Browser</a></li>
+		</ul>
+	</div>
+</div>
+<div class="portal" role="navigation" id='p-Gamepedia' aria-labelledby='p-Gamepedia-label'>
+	<h3 id='p-Gamepedia-label'>Gamepedia</h3>
+	<div class="body">
+		<ul>
+			<li id="n-Gamepedia-Forums"><a href="http://gamepedia.com/forums" target="_blank">Gamepedia Forums</a></li>
+			<li id="n-Help-Wiki"><a href="http://help.gamepedia.com" target="_blank">Help Wiki</a></li>
+			<li id="n-Contact-Us"><a href="http://help.gamepedia.com/How_To_Contact_Gamepedia" target="_blank">Contact Us</a></li>
+		</ul>
+	</div>
+</div>
+<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+	<h3 id='p-tb-label'>Tools</h3>
+	<div class="body">
+		<ul>
+			<li id="t-whatlinkshere"><a href="/Special:WhatLinksHere/List_of_unique_axes" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+			<li id="t-recentchangeslinked"><a href="/Special:RecentChangesLinked/List_of_unique_axes" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+			<li id="t-specialpages"><a href="/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li>
+			<li id="t-print"><a href="/index.php?title=List_of_unique_axes&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>
+			<li id="t-permalink"><a href="/index.php?title=List_of_unique_axes&amp;oldid=138025" title="Permanent link to this revision of the page">Permanent link</a></li>
+			<li id="t-info"><a href="/index.php?title=List_of_unique_axes&amp;action=info">Page information</a></li>
+		</ul>
+	</div>
+</div>
+<div class="portal" role="navigation" id='p-socialProfiles' aria-labelledby='p-socialProfiles-label'>
+	<h3 id='p-socialProfiles-label'></h3>
+	<div class="body">
+		<div class='socialSidebar'>
+						<script type='text/javascript'>
+							document.getElementById('p-socialProfiles').className = 'portal persistent';
+						</script>
+						<div class='socialLink twitter'><a href="https://twitter.com/CurseGamepedia" target="_blank"><img src="/extensions/Social/images/square_icons/twitter.png" /></a></div><div class='socialLink facebook'><a href="https://www.facebook.com/CurseGamepedia" target="_blank"><img src="/extensions/Social/images/square_icons/facebook.png" /></a></div><div class='socialLink youtube'><a href="https://www.youtube.com/CurseGP" target="_blank"><img src="/extensions/Social/images/square_icons/youtube.png" /></a></div><div class='socialLink googleplus'><a href="https://plus.google.com/115617982346226991528" target="_blank" rel="Publisher"><img src="/extensions/Social/images/square_icons/googleplus.png" /></a></div>
+					</div>	</div>
+</div>
+				<!-- </div> -->
+			</div>
+		</div>
+		<div id="pageWrapper">
+			<div id="mw-head-base" class="noprint"></div>
+			<!-- content -->
+			<div id="content" itemprop="articleBody" class="mw-body">
+				<a id="top"></a>
+				<div id="mw-js-message" style="display:none;"></div>
+								<!-- first ads placement -->
+									<div class="atflb">
+						<div id='cdm-zone-01'></div>					</div>
+								<!-- /first ads placement -->
+				<!-- firstHeading -->
+				<h1 id="firstHeading" class="firstHeading">
+					<span itemprop="name" dir="auto">List of unique axes</span>
+				</h1>
+				<!-- /firstHeading -->
+				<div id="bodyWrapper">
+					<!-- bodyContent -->
+					<div id="bodyContent">
+												<!-- 300x250 Ad block -->
+						<div class="atfmrec">
+							<div id='cdm-zone-02'></div>						</div>
+						<!-- End 300x250 Ad block -->
+												<!-- /sidebar -->
+												<div id="siteSub">From Path of Exile Wiki</div>
+												<div id="contentSub"></div>
+																		<div id="jump-to-nav" class="mw-jump">
+							Jump to:							<a href="#mw-navigation">navigation</a>, 							<a href="#p-search">search</a>
+						</div>
+						<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="rellink seealso">See also: <a href="/List_of_axes" title="List of axes">List of axes</a></div>
+<p>This is a list of <a href="/Unique" title="Unique" class="mw-redirect">unique</a> <a href="/Axe" title="Axe">axe</a> class <a href="/Weapon" title="Weapon">weapons</a>.
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#One-handed_axes"><span class="tocnumber">1</span> <span class="toctext">One-handed axes<span></span></span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Two-handed_axes"><span class="tocnumber">2</span> <span class="toctext">Two-handed axes<span></span></span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="One-handed_axes">One-handed axes<span id="1h-axes"></span></span></h2>
+<table class="wikitable sortable" style="text-align:center;&#160;;"><tr><th>Name</th><th>Base Item</th><th data-sort-type="number"><abbr class="nounderline" title="Required Level"><img alt="Lvl." src="http://hydra-media.cursecdn.com/pathofexile.gamepedia.com/d/d1/Level_up_icon_small.png?version=f6408ef83c9a5080a5d7132d9f124bcb" width="22" height="22" /></abbr></th><th data-sort-type="number"><abbr class="nounderline" title="Required Strength"><img alt="Str." src="http://hydra-media.cursecdn.com/pathofexile.gamepedia.com/7/77/StrengthIcon_small.png?version=41878b9fe7ac08d5c1105e7001d772f2" width="22" height="22" /></abbr></th><th data-sort-type="number"><abbr class="nounderline" title="Required Dexterity"><img alt="Dex." src="http://hydra-media.cursecdn.com/pathofexile.gamepedia.com/1/15/DexterityIcon_small.png?version=ac128f99397a5552582d836adc75e514" width="22" height="22" /></abbr></th><th data-sort-type="number">Damage</th><th data-sort-type="number">Critical Strike Chance</th><th data-sort-type="number">Attacks per Second</th><th data-sort-type="number">Damage per Second</th><th class="unsortable">Modifiers</th></tr><tr id="Dreadarc"><td data-sort-value="Dreadarc"><a href="/Dreadarc" title="Dreadarc">Dreadarc</a> <br /> <a href="/Dreadarc" title="Dreadarc"><img alt="" src="http://hydra-media.cursecdn.com/pathofexile.gamepedia.com/thumb/d/d9/Dreadarc.png/78px-Dreadarc.png?version=6a3c6dd16ca002d07304e557ef5b2aba" width="78" height="117" srcset="http://hydra-media.cursecdn.com/pathofexile.gamepedia.com/thumb/d/d9/Dreadarc.png/117px-Dreadarc.png 1.5x, http://hydra-media.cursecdn.com/pathofexile.gamepedia.com/d/d9/Dreadarc.png 2x" /></a></td><td data-sort-value="Cleaver"><a href="/Cleaver" title="Cleaver">Cleaver</a></td><td>16</td><td>48</td><td class="table-na" data-sort-value="0"><small>N/A</small></td><td data-sort-value="56"><span class="text-physical"><span class="text-mod">(17&#8211;55 to 27&#8211;60)</span></span><br /><span class="text-fire">(5&#8211;20 to 15&#8211;25)</span><br /></td><td data-sort-value="5">5%</td><td data-sort-value="1.195"><span class="text-mod">(1.18 to 1.21)</span></td><td>68.59</td><td><div class="itemboxstats"><span class="itemboxstatsgroup text-mod">Adds (5&#8211;20 to 15&#8211;25) Physical Damage <br /> Adds (5&#8211;20 to 15&#8211;25) Fire Damage <br /> 5% increased Movement Speed <br /> (7 to 10)% Increased Attack Speed <br /> (15 to 25)% to Fire Resistance <br /> Curse Enemies with Flammability on Hit</span></div></td></tr><tr id="Dyadus"><td data-sort-value="Dyadus"><a href="/Dyadus" title="Dyadus">Dyadus</a> <br /> <a href="/Dyadus" title="Dyadus"><img alt="" src="http://hydra-media.cursecdn.com/pathofexile.gamepedia.com/thumb/e/e0/Dyadus.png/78px-Dyadus.png?version=d7317a36ecb2dafdbf0dcf53d3d590b7" width="78" height="116" srcset="http://hydra-media.cursecdn.com/pathofexile.gamepedia.com/thumb/e/e0/Dyadus.png/117px-Dyadus.png 1.5x, http://hydra-media.cursecdn.com/pathofexile.gamepedia.com/e/e0/Dyadus.png 2x" /></a></td><td data-sort-value="Infernal Axe"><a href="/Infernal_Axe" title="Infernal Axe">Infernal Axe</a></td><td>69</td><td>158</td><td>76</td><td data-sort-value="255"><span class="text-physical">45&#8211;75</span><br /><span class="text-fire">(170&#8211;200 to 190&#8211;220)</span><br /><span class="text-cold">(170&#8211;200 to 190&#8211;220)</span><br /></td><td data-sort-value="5">5%</td><td data-sort-value="1.465"><span class="text-mod">(1.43 to 1.50)</span></td><td>382.91</td><td><div class="itemboxstats"><span class="itemboxstatsgroup text-mod">Adds (170&#8211;200 to 190&#8211;220) Fire Damage in Main Hand <br /> Adds (170&#8211;200 to 190&#8211;220) Cold Damage in Off Hand <br /> (10 to 15)% increased Attack Speed <br /> Enemies Chilled by you take 40% increased Burning Damage <br /> 25% Chance to Ignite when in Main Hand <br /> 100% increased Chill Duration on enemies when in Off Hand</span></div></td></tr><tr id="Jack.2C_the_Axe"><td data-sort-value="Jack, the Axe"><a href="/Jack,_the_Axe" title="Jack, the Axe">Jack, the Axe</a> <br /> <a href="/Jack,_the_Axe" title="Jack, the Axe"><img alt="" src="http://hydra-media.cursecdn.com/pathofexile.gamepedia.com/thumb/b/b5/Jack%2C_the_Axe.png/78px-Jack%2C_the_Axe.png?version=6727934cf26cad10b3bac27001c51d2f" width="78" height="117" srcset="http://hydra-media.cursecdn.com/pathofexile.gamepedia.com/thumb/b/b5/Jack%2C_the_Axe.png/117px-Jack%2C_the_Axe.png 1.5x, http://hydra-media.cursecdn.com/pathofexile.gamepedia.com/b/b5/Jack%2C_the_Axe.png 2x" /></a></td><td data-sort-value="Vaal Hatchet"><a href="/Vaal_Hatchet" title="Vaal Hatchet">Vaal Hatchet</a></td><td>65</td><td>140</td><td>86</td><td data-sort-value="131.5"><span class="text-physical"><span class="text-mod">(68&#8211;174 to 81&#8211;203)</span></span><br /></td><td data-sort-value="5">5.00%</td><td data-sort-value="1.575"><span class="text-mod">(1.54 to 1.61)</span></td><td>212.29</td><td><div class="itemboxstats"><span class="itemboxstatsgroup text-mod">(90 to 110)% increased Physical Damage <br /> Adds (11&#8211;18 to 14&#8211;23) Physical Damage <br /> (10 to 15)% increased Attack Speed <br /> 2% of Physical Attack Damage Leeched as Life <br /> 50% reduced Life Leeched per second <br /> Causes Bleeding on Hit</span></div></td></tr><tr id="Moonbender.27s_Wing"><td data-sort-value="Moonbender&#39;s Wing"><a href="/Moonbender%27s_Wing" title="Moonbender's Wing">Moonbender's Wing</a> <br /> <a href="/Moonbender%27s_Wing" title="Moonbender&#39;s Wing"><img alt="" src="http://hydra-media.cursecdn.com/pathofexile.gamepedia.com/thumb/2/2b/Moonbender%27s_Wing.png/78px-Moonbender%27s_Wing.png?version=902b3701853bedf7c6b5fe6cdfdfeb81" width="78" height="117" srcset="http://hydra-media.cursecdn.com/pathofexile.gamepedia.com/thumb/2/2b/Moonbender%27s_Wing.png/117px-Moonbender%27s_Wing.png 1.5x, http://hydra-media.cursecdn.com/pathofexile.gamepedia.com/2/2b/Moonbender%27s_Wing.png 2x" /></a></td><td data-sort-value="Tomahawk"><a href="/Tomahawk" title="Tomahawk">Tomahawk</a></td><td>39</td><td>81</td><td>56</td><td data-sort-value="31.5"><span class="text-physical"><span class="text-mod">(22&#8211;41 to 22&#8211;41)</span></span><br /></td><td data-sort-value="5"><span class="text-mod">(5.00 to 5.00)%</span></td><td data-sort-value="1.25">1.25</td><td>40.36</td><td><div class="itemboxstats"><span class="itemboxstatsgroup text-mod">(70 to 90)% increased Physical Damage <br /> Adds (5&#8211;13 to 9&#8211;17) Physical Damage <br /> (30 to 50)% increased Critical Strike Chance <br /> 25% of Physical Damage Converted to Cold Damage <br /> 25% of Physical Damage Converted to Lightning Damage <br /> Grants level 1 Lightning Warp Skill</span></div></td></tr><tr id="Relentless_Fury"><td data-sort-value="Relentless Fury"><a href="/Relentless_Fury" title="Relentless Fury">Relentless Fury</a> <br /> <a href="/Relentless_Fury" title="Relentless Fury"><img alt="" src="http://hydra-media.cursecdn.com/pathofexile.gamepedia.com/thumb/6/6e/Relentless_Fury.png/78px-Relentless_Fury.png?version=4e45636b213f4af1b471e68a3e36f738" width="78" height="117" srcset="http://hydra-media.cursecdn.com/pathofexile.gamepedia.com/thumb/6/6e/Relentless_Fury.png/117px-Relentless_Fury.png 1.5x, http://hydra-media.cursecdn.com/pathofexile.gamepedia.com/6/6e/Relentless_Fury.png 2x" /></a></td><td data-sort-value="Decorative Axe"><a href="/Decorative_Axe" title="Decorative Axe">Decorative Axe</a></td><td>29</td><td>80</td><td>23</td><td data-sort-value="66.75"><span class="text-physical"><span class="text-mod">(42&#8211;80 to 50&#8211;95)</span></span><br /></td><td data-sort-value="5">5.00%</td><td data-sort-value="1.2">1.20</td><td>82.10</td><td><div class="itemboxstats"><span class="itemboxstatsgroup text-mod">(60 to 80)% increased Physical Damage <br /> Adds (3&#8211;5 to 7&#8211;10) Physical Damage <br /> 0.6% of Physical Attack Damage Leeched as Life <br /> Culling Strike <br /> You gain Onslaught for 3 seconds on Culling Strike <br /> Cannot be Chilled while you have Onslaught</span></div></td></tr><tr id="The_Screaming_Eagle"><td data-sort-value="Screaming Eagle, The"><a href="/The_Screaming_Eagle" title="The Screaming Eagle">The Screaming Eagle</a> <br /> <a href="/The_Screaming_Eagle" title="The Screaming Eagle"><img alt="" src="http://hydra-media.cursecdn.com/pathofexile.gamepedia.com/thumb/2/2c/The_Screaming_Eagle.png/78px-The_Screaming_Eagle.png?version=11e4dc62fdb00968dae207d65eb7ad2a" width="78" height="117" srcset="http://hydra-media.cursecdn.com/pathofexile.gamepedia.com/thumb/2/2c/The_Screaming_Eagle.png/117px-The_Screaming_Eagle.png 1.5x, http://hydra-media.cursecdn.com/pathofexile.gamepedia.com/2/2c/The_Screaming_Eagle.png 2x" /></a></td><td data-sort-value="Jade Hatchet"><a href="/Jade_Hatchet" title="Jade Hatchet">Jade Hatchet</a></td><td>6</td><td>21</td><td class="table-na" data-sort-value="0"><small>N/A</small></td><td data-sort-value="30.5"><span class="text-physical"><span class="text-mod">(18&#8211;38 to 23&#8211;43)</span></span><br /></td><td data-sort-value="5">5.00%</td><td data-sort-value="1.4">1.40</td><td>43.77</td><td><div class="itemboxstats"><span class="itemboxstatsgroup text-mod">Adds (10&#8211;25 to 15&#8211;30) Physical Damage <br /> +(10 to 15) to maximum Life <br /> +(5 to 7) Life gained on Kill <br /> 10% increased Movement Speed <br /> Gems in this item are supported by level 2 Chance to Flee</span></div></td></tr><tr id="Soul_Taker"><td data-sort-value="Soul Taker"><a href="/Soul_Taker" title="Soul Taker">Soul Taker</a> <br /> <a href="/Soul_Taker" title="Soul Taker"><img alt="" src="http://hydra-media.cursecdn.com/pathofexile.gamepedia.com/thumb/b/bf/Soul_Taker.png/78px-Soul_Taker.png?version=ab64599903d8cc617d9b31b89dd04e44" width="78" height="117" srcset="http://hydra-media.cursecdn.com/pathofexile.gamepedia.com/thumb/b/bf/Soul_Taker.png/117px-Soul_Taker.png 1.5x, http://hydra-media.cursecdn.com/pathofexile.gamepedia.com/b/bf/Soul_Taker.png 2x" /></a></td><td data-sort-value="Siege Axe"><a href="/Siege_Axe" title="Siege Axe">Siege Axe</a></td><td>59</td><td>119</td><td>82</td><td data-sort-value="133.25"><span class="text-physical"><span class="text-mod">(84&#8211;158 to 101&#8211;190)</span></span><br /></td><td data-sort-value="5">5%</td><td data-sort-value="1.84"><span class="text-mod">(1.80 to 1.88)</span></td><td>251.31</td><td><div class="itemboxstats"><span class="itemboxstatsgroup text-mod">(100 to 140)% increased Physical Damage <br /> Adds 10&#8211;20 Physical Damage <br /> (20 to 25)% increased Attack Speed <br /> +(20 to 25)% to Cold Resistance <br /> Insufficient Mana doesn't prevent your Melee Attacks <br /> Your Physical Damage can Chill</span></div></td></tr></table>
+<h2><span class="mw-headline" id="Two-handed_axes">Two-handed axes<span id="2h-axes"></span></span></h2>
+<table class="wikitable sortable" style="text-align:center;&#160;;"><tr><th>Name</th><th>Base Item</th><th data-sort-type="number"><abbr class="nounderline" title="Required Level"><img alt="Lvl." src="http://hydra-media.cursecdn.com/pathofexile.gamepedia.com/d/d1/Level_up_icon_small.png?version=f6408ef83c9a5080a5d7132d9f124bcb" width="22" height="22" /></abbr></th><th data-sort-type="number"><abbr class="nounderline" title="Required Strength"><img alt="Str." src="http://hydra-media.cursecdn.com/pathofexile.gamepedia.com/7/77/StrengthIcon_small.png?version=41878b9fe7ac08d5c1105e7001d772f2" width="22" height="22" /></abbr></th><th data-sort-type="number"><abbr class="nounderline" title="Required Dexterity"><img alt="Dex." src="http://hydra-media.cursecdn.com/pathofexile.gamepedia.com/1/15/DexterityIcon_small.png?version=ac128f99397a5552582d836adc75e514" width="22" height="22" /></abbr></th><th data-sort-type="number">Damage</th><th data-sort-type="number">Critical Strike Chance</th><th data-sort-type="number">Attacks per Second</th><th data-sort-type="number">Damage per Second</th><th class="unsortable">Modifiers</th></tr><tr id="Atziri.27s_Disfavour"><td data-sort-value="Atziri&#39;s Disfavour"><a href="/Atziri%27s_Disfavour" title="Atziri's Disfavour">Atziri's Disfavour</a> <br /> <a href="/Atziri%27s_Disfavour" title="Atziri&#39;s Disfavour"><img alt="" src="http://hydra-media.cursecdn.com/pathofexile.gamepedia.com/thumb/d/df/Atziri%27s_Disfavour.png/78px-Atziri%27s_Disfavour.png?version=09c74db52589375e1ac04782f2616881" width="78" height="156" srcset="http://hydra-media.cursecdn.com/pathofexile.gamepedia.com/thumb/d/df/Atziri%27s_Disfavour.png/117px-Atziri%27s_Disfavour.png 1.5x, http://hydra-media.cursecdn.com/pathofexile.gamepedia.com/d/df/Atziri%27s_Disfavour.png 2x" /></a></td><td data-sort-value="Vaal Axe"><a href="/Vaal_Axe" title="Vaal Axe">Vaal Axe</a></td><td>75</td><td>158</td><td>76</td><td data-sort-value="366.75"><span class="text-physical"><span class="text-mod">(305&#8211;411 to 320&#8211;431)</span></span><br /></td><td data-sort-value="5">5%</td><td data-sort-value="1.305"><span class="text-mod">(1.28 to 1.33)</span></td><td>490.57</td><td><div class="itemboxstats"><span class="itemboxstatsgroup text-mod">Adds (220&#8211;270 to 235&#8211;290) Physical Damage <br /> (12 to 16)% increased Attack Speed <br /> Causes Bleeding on Hit <br /> +2 to Weapon range <br /> +2 to Level of Support Gems in this item</span></div></td></tr><tr id="The_Blood_Reaper"><td data-sort-value="Blood Reaper, The"><a href="/The_Blood_Reaper" title="The Blood Reaper">The Blood Reaper</a> <br /> <a href="/The_Blood_Reaper" title="The Blood Reaper"><img alt="" src="http://hydra-media.cursecdn.com/pathofexile.gamepedia.com/thumb/9/97/The_Blood_Reaper.png/78px-The_Blood_Reaper.png?version=0ec79049f628824bd8c6ac8dcca4b166" width="78" height="156" srcset="http://hydra-media.cursecdn.com/pathofexile.gamepedia.com/thumb/9/97/The_Blood_Reaper.png/117px-The_Blood_Reaper.png 1.5x, http://hydra-media.cursecdn.com/pathofexile.gamepedia.com/9/97/The_Blood_Reaper.png 2x" /></a></td><td data-sort-value="Headsman Axe"><a href="/Headsman_Axe" title="Headsman Axe">Headsman Axe</a></td><td>45</td><td>99</td><td>57</td><td data-sort-value="158.5"><span class="text-physical"><span class="text-mod">(120&#8211;182 to 132&#8211;200)</span></span><br /></td><td data-sort-value="5">5%</td><td data-sort-value="1.25">1.25</td><td>203.08</td><td><div class="itemboxstats"><span class="itemboxstatsgroup text-mod">(100 to 120)% increased Physical Damage <br /> +100 to maximum Life <br /> 10.0 Life Regenerated per second <br /> 1% of Physical Damage Leeched as Life <br /> 50% increased Mana Cost of Skills <br /> Causes Bleeding on Hit</span></div></td></tr><tr id="The_Harvest"><td data-sort-value="Harvest, The"><a href="/The_Harvest" title="The Harvest">The Harvest</a> <br /> <a href="/The_Harvest" title="The Harvest"><img alt="" src="http://hydra-media.cursecdn.com/pathofexile.gamepedia.com/thumb/a/a9/The_Harvest.png/78px-The_Harvest.png?version=5cc78d2880ac44826bbf52316baa31f6" width="78" height="156" srcset="http://hydra-media.cursecdn.com/pathofexile.gamepedia.com/thumb/a/a9/The_Harvest.png/117px-The_Harvest.png 1.5x, http://hydra-media.cursecdn.com/pathofexile.gamepedia.com/a/a9/The_Harvest.png 2x" /></a></td><td data-sort-value="Jasper Chopper"><a href="/Jasper_Chopper" title="Jasper Chopper">Jasper Chopper</a></td><td>37</td><td>100</td><td>29</td><td data-sort-value="194.25"><span class="text-physical"><span class="text-mod">(145&#8211;227 to 158&#8211;247)</span></span><br /></td><td data-sort-value="5">5%</td><td data-sort-value="1">1.00</td><td>199.11</td><td><div class="itemboxstats"><span class="itemboxstatsgroup text-mod">(120 to 140)% increased Physical Damage <br /> 1.2% of Damage leeched as Life on Critical Strike <br /> 3% increased Global Critical Strike Chance per Level <br /> Gain Flask Charges when you deal a Critical Strike</span></div></td></tr><tr id="Kaom.27s_Primacy"><td data-sort-value="Kaom&#39;s Primacy"><a href="/Kaom%27s_Primacy" title="Kaom's Primacy">Kaom's Primacy</a> <br /> <a href="/Kaom%27s_Primacy" title="Kaom&#39;s Primacy"><img alt="" src="http://hydra-media.cursecdn.com/pathofexile.gamepedia.com/thumb/9/97/Kaom%27s_Primacy.png/78px-Kaom%27s_Primacy.png?version=3d896d8ea15398e1b1442fabde13da0a" width="78" height="156" srcset="http://hydra-media.cursecdn.com/pathofexile.gamepedia.com/thumb/9/97/Kaom%27s_Primacy.png/117px-Kaom%27s_Primacy.png 1.5x, http://hydra-media.cursecdn.com/pathofexile.gamepedia.com/9/97/Kaom%27s_Primacy.png 2x" /></a></td><td data-sort-value="Karui Chopper"><a href="/Karui_Chopper" title="Karui Chopper">Karui Chopper</a></td><td>58</td><td>151</td><td>43</td><td data-sort-value="387.5"><span class="text-physical"><span class="text-mod">(252&#8211;395 to 310&#8211;486)</span></span><br /><span class="text-fire">(16&#8211;32 to 21&#8211;38)</span><br /></td><td data-sort-value="5">5%</td><td data-sort-value="1">1.00</td><td>397.19</td><td><div class="itemboxstats"><span class="itemboxstatsgroup text-mod">(160 to 220)% increased Physical Damage <br /> Adds (16&#8211;32 to 21&#8211;38) Fire Damage <br /> +(150 to 250) to Accuracy Rating <br /> +20 Life gained on Kill <br /> Culling Strike</span></div></td></tr><tr id="Kingmaker"><td data-sort-value="Kingmaker"><a href="/Kingmaker" title="Kingmaker">Kingmaker</a> <br /> <a href="/Kingmaker" title="Kingmaker"><img alt="" src="http://hydra-media.cursecdn.com/pathofexile.gamepedia.com/thumb/c/c5/Kingmaker.png/78px-Kingmaker.png?version=f5acb596ddd2653c33e2494236328119" width="78" height="156" srcset="http://hydra-media.cursecdn.com/pathofexile.gamepedia.com/thumb/c/c5/Kingmaker.png/117px-Kingmaker.png 1.5x, http://hydra-media.cursecdn.com/pathofexile.gamepedia.com/c/c5/Kingmaker.png 2x" /></a></td><td data-sort-value="Despot Axe"><a href="/Despot_Axe" title="Despot Axe">Despot Axe</a></td><td>66</td><td>140</td><td>86</td><td data-sort-value="197.75"><span class="text-physical"><span class="text-mod">(76&#8211;260 to 103&#8211;352)</span></span><br /></td><td data-sort-value="5"><span class="text-mod">5%</span></td><td data-sort-value="1.38"><span class="text-mod">(1.3 to 1.46)</span></td><td>279.72</td><td><div class="itemboxstats"><span class="itemboxstatsgroup text-mod">+(100 to 150) to Maximum Mana <br /> (200 to 250)% increased Physical Damage <br /> (7 to 12)% increased Attack Speed <br /> Nearby Allies' Spells Have Culling Strike <br /> Nearby Allies Have 30% Increased Item Rarity</span></div></td></tr><tr id="Limbsplit"><td data-sort-value="Limbsplit"><a href="/Limbsplit" title="Limbsplit">Limbsplit</a> <br /> <a href="/Limbsplit" title="Limbsplit"><img alt="" src="http://hydra-media.cursecdn.com/pathofexile.gamepedia.com/thumb/1/1f/Limbsplit.png/78px-Limbsplit.png?version=fbdaa4b56c759a30ff7be921ce42795d" width="78" height="156" srcset="http://hydra-media.cursecdn.com/pathofexile.gamepedia.com/thumb/1/1f/Limbsplit.png/117px-Limbsplit.png 1.5x, http://hydra-media.cursecdn.com/pathofexile.gamepedia.com/1/1f/Limbsplit.png 2x" /></a></td><td data-sort-value="Woodsplitter"><a href="/Woodsplitter" title="Woodsplitter">Woodsplitter</a></td><td>13</td><td>36</td><td>17</td><td data-sort-value="70.25"><span class="text-physical"><span class="text-mod">(43&#8211;90 to 48&#8211;100)</span></span><br /></td><td data-sort-value="5">5%</td><td data-sort-value="1.2">1.20</td><td>86.41</td><td><div class="itemboxstats"><span class="itemboxstatsgroup text-mod">+1 to Level of Strength Gems in this item <br /> (80 to 100)% increased Physical Damage <br /> Adds 5&#8211;10 Physical Damage <br /> +(15 to 30) to Strength <br /> Culling Strike</span></div></td></tr><tr id="Reaper.27s_Pursuit"><td data-sort-value="Reaper&#39;s Pursuit"><a href="/Reaper%27s_Pursuit" title="Reaper's Pursuit">Reaper's Pursuit</a> <br /> <a href="/Reaper%27s_Pursuit" title="Reaper&#39;s Pursuit"><img alt="" src="http://hydra-media.cursecdn.com/pathofexile.gamepedia.com/thumb/f/fb/Reaper%27s_Pursuit.png/78px-Reaper%27s_Pursuit.png?version=3d2307bf907081de3812cf7bd5270b1d" width="78" height="156" srcset="http://hydra-media.cursecdn.com/pathofexile.gamepedia.com/thumb/f/fb/Reaper%27s_Pursuit.png/117px-Reaper%27s_Pursuit.png 1.5x, http://hydra-media.cursecdn.com/pathofexile.gamepedia.com/f/fb/Reaper%27s_Pursuit.png 2x" /></a></td><td data-sort-value="Shadow Axe"><a href="/Shadow_Axe" title="Shadow Axe">Shadow Axe</a></td><td>33</td><td>80</td><td>37</td><td data-sort-value="125.5"><span class="text-physical"><span class="text-mod">(94&#8211;142 to 106&#8211;160)</span></span><br /></td><td data-sort-value="5">5%</td><td data-sort-value="1.2">1.20</td><td>154.36</td><td><div class="itemboxstats"><span class="itemboxstatsgroup text-mod">(100 to 125)% increased Physical Damage <br /> +10 Life Gained on Kill <br /> (30 to 40)% increased Rarity of Items found <br /> 15% increased Movement Speed when on Full Life <br /> Culling Strike <br /> Hits can't be Evaded</span></div></td></tr><tr id="Wideswing"><td data-sort-value="Wideswing"><a href="/Wideswing" title="Wideswing">Wideswing</a> <br /> <a href="/Wideswing" title="Wideswing"><img alt="" src="http://hydra-media.cursecdn.com/pathofexile.gamepedia.com/thumb/9/95/Wideswing.png/78px-Wideswing.png?version=2bb42c94811bd1854478f915df62c965" width="78" height="156" srcset="http://hydra-media.cursecdn.com/pathofexile.gamepedia.com/thumb/9/95/Wideswing.png/117px-Wideswing.png 1.5x, http://hydra-media.cursecdn.com/pathofexile.gamepedia.com/9/95/Wideswing.png 2x" /></a></td><td data-sort-value="Poleaxe"><a href="/Poleaxe" title="Poleaxe">Poleaxe</a></td><td>18</td><td>44</td><td>25</td><td data-sort-value="84.5"><span class="text-physical"><span class="text-mod">(62&#8211;92 to 73&#8211;111)</span></span><br /></td><td data-sort-value="5">5%</td><td data-sort-value="1.25">1.25</td><td>108.27</td><td><div class="itemboxstats"><span class="itemboxstatsgroup text-mod">Gems in this item are Supported by level 20 Increased Area of Effect <br /> (120 to 160)% increased Physical Damage <br /> +10 to Strength <br /> +(50 to 80) to Accuracy Rating <br /> +10 Mana Gained on Kill <br /> +2 to Weapon range</span></div></td></tr><tr id="Wings_of_Entropy"><td data-sort-value="Wings of Entropy"><a href="/Wings_of_Entropy" title="Wings of Entropy">Wings of Entropy</a> <br /> <a href="/Wings_of_Entropy" title="Wings of Entropy"><img alt="" src="http://hydra-media.cursecdn.com/pathofexile.gamepedia.com/thumb/1/12/Wings_of_Entropy.png/78px-Wings_of_Entropy.png?version=bed8645df00ed2b725748dac8dcc01e6" width="78" height="156" srcset="http://hydra-media.cursecdn.com/pathofexile.gamepedia.com/thumb/1/12/Wings_of_Entropy.png/117px-Wings_of_Entropy.png 1.5x, http://hydra-media.cursecdn.com/pathofexile.gamepedia.com/1/12/Wings_of_Entropy.png 2x" /></a></td><td data-sort-value="Sundering Axe"><a href="/Sundering_Axe" title="Sundering Axe">Sundering Axe</a></td><td>60</td><td>149</td><td>76</td><td data-sort-value="369.5"><span class="text-physical"><span class="text-mod">(124&#8211;256 to 136&#8211;282)</span></span><br /><span class="text-fire">(55&#8211;100 to 65&#8211;120)</span><br /><span class="text-chaos">(55&#8211;100 to 65&#8211;120)</span></td><td data-sort-value="5">5.00%</td><td data-sort-value="1.25">1.25</td><td>473.42</td><td><div class="itemboxstats"><span class="itemboxstatsgroup text-mod">25% of Block Chance applied to Spells <br /> 8% additional Chance to Block while Dual Wielding <br /> (100 to 120)% increased Physical Damage <br /> Adds (55&#8211;100 to 65&#8211;120) Fire Damage in Main Hand <br /> Adds (55&#8211;100 to 65&#8211;120) Chaos Damage in Off Hand <br /> Counts as Dual Wielding</span></div></td></tr></table>
+<table cellspacing="0" class="navbox" style="border-spacing:0;"><tr><td style="padding:2px;"><table cellspacing="0" class="nowraplinks collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit;"><tr><th scope="col" class="navbox-title" colspan="2"><div class="plainlinks hlist navbar mini"><ul><li class="nv-view"><a href="/Template:Navbox_Unique_Items" title="Template:Navbox Unique Items"><span title="View this template" style=";;background:none transparent;border:none;;">v</span></a></li><li class="nv-talk"><a href="/index.php?title=Template_talk:Navbox_Unique_Items&amp;action=edit&amp;redlink=1" class="new" title="Template talk:Navbox Unique Items (page does not exist)"><span title="Discuss this template" style=";;background:none transparent;border:none;;">t</span></a></li><li class="nv-edit"><a target="_blank" class="external text" href="//pathofexile.gamepedia.com/index.php?title=Template:Navbox_Unique_Items&amp;action=edit"><span title="Edit this template" style=";;background:none transparent;border:none;;">e</span></a></li></ul></div><div style="font-size:110%;"><a href="/Unique_item" title="Unique item">Unique Items</a></div></th></tr><tr style="height:2px;"><td colspan="2"></td></tr><tr><th scope="row" class="navbox-group"><a href="/List_of_unique_accessories" title="List of unique accessories">Accessories</a></th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;"><div style="padding:0em 0.25em;"><div class="hlist" style="margin-left:0em;">
+<ul>
+<li> <a href="/List_of_unique_amulets" title="List of unique amulets">Amulets</a>
+</li>
+<li> <a href="/List_of_unique_belts" title="List of unique belts">Belts</a>
+</li>
+<li> <a href="/List_of_unique_rings" title="List of unique rings">Rings</a>
+</li>
+<li> <a href="/List_of_unique_quivers" title="List of unique quivers">Quivers</a>
+</li>
+</ul>
+</div></div></td></tr><tr style="height:2px;"><td colspan="2"></td></tr><tr><th scope="row" class="navbox-group"><a href="/List_of_unique_armour" title="List of unique armour">Armour</a></th><td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;"><div style="padding:0em 0.25em;"><div class="hlist" style="margin-left:0em;">
+<ul>
+<li> <a href="/List_of_unique_body_armours" title="List of unique body armours">Body armours</a>
+</li>
+<li> <a href="/List_of_unique_boots" title="List of unique boots">Boots</a>
+</li>
+<li> <a href="/List_of_unique_gloves" title="List of unique gloves">Gloves</a>
+</li>
+<li> <a href="/List_of_unique_helmets" title="List of unique helmets">Helmets</a>
+</li>
+<li> <a href="/List_of_unique_shields" title="List of unique shields">Shields</a>
+</li>
+</ul>
+</div></div></td></tr><tr style="height:2px;"><td colspan="2"></td></tr><tr><th scope="row" class="navbox-group"><a href="/List_of_unique_weapons" title="List of unique weapons">Weapons</a></th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;"><div style="padding:0em 0.25em;"><div class="hlist" style="margin-left:0em;">
+<ul>
+<li> <strong class="selflink">Axes</strong>
+</li>
+<li> <a href="/List_of_unique_bows" title="List of unique bows">Bows</a>
+</li>
+<li> <a href="/List_of_unique_claws" title="List of unique claws">Claws</a>
+</li>
+<li> <a href="/List_of_unique_daggers" title="List of unique daggers">Daggers</a>
+</li>
+<li> <a href="/List_of_unique_fishing_rods" title="List of unique fishing rods">Fishing Rods</a>
+</li>
+<li> <a href="/List_of_unique_maces" title="List of unique maces">Maces</a>
+</li>
+<li> <a href="/List_of_unique_staves" title="List of unique staves">Staves</a>
+</li>
+<li> <a href="/List_of_unique_swords" title="List of unique swords">Swords</a>
+</li>
+<li> <a href="/List_of_unique_wands" title="List of unique wands">Wands</a>
+</li>
+</ul>
+</div></div></td></tr><tr style="height:2px;"><td colspan="2"></td></tr><tr><th scope="row" class="navbox-group"><a href="/List_of_unique_flasks" title="List of unique flasks">Flasks</a></th><td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;"><div style="padding:0em 0.25em;"><div class="hlist" style="margin-left:0em;">
+<ul>
+<li> <a href="/List_of_unique_life_flasks" title="List of unique life flasks">Life</a>
+</li>
+<li> <a href="/List_of_unique_mana_flasks" title="List of unique mana flasks">Mana</a>
+</li>
+<li> <a href="/List_of_unique_hybrid_flasks" title="List of unique hybrid flasks">Hybrid</a>
+</li>
+<li> <a href="/List_of_unique_utility_flasks" title="List of unique utility flasks">Utility</a>
+</li>
+</ul>
+</div></div></td></tr><tr style="height:2px;"><td colspan="2"></td></tr><tr><th scope="row" class="navbox-group"><a href="/List_of_unique_jewels" title="List of unique jewels">Jewels</a></th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;"><div style="padding:0em 0.25em;"><div class="hlist" style="margin-left:0em;">
+<ul>
+<li> <a href="/List_of_unique_jewels_received_by_drop" title="List of unique jewels received by drop">Random Drop</a>
+</li>
+<li> <a href="/List_of_unique_jewels_received_by_corruption" title="List of unique jewels received by corruption">Corrupted</a>
+</li>
+<li> <a href="/List_of_unique_jewels_received_as_quest_reward" title="List of unique jewels received as quest reward">Quest Reward</a>
+</li>
+</ul>
+</div></div></td></tr><tr style="height:2px;"><td colspan="2"></td></tr><tr><th scope="row" class="navbox-group"><a href="/List_of_unique_maps" title="List of unique maps">Maps</a></th><td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;"><div style="padding:0em 0.25em;"><div class="hlist" style="margin-left:0em;">
+<ul>
+<li> 
+</li>
+</ul>
+</div></div></td></tr></table></td></tr></table>
+
+<!-- 
+NewPP limit report
+CPU time usage: 1.152 seconds
+Real time usage: 1.960 seconds
+Preprocessor visited node count: 1266/1000000
+Preprocessor generated node count: 4554/1000000
+Post‐expand include size: 77832/2097152 bytes
+Template argument size: 3238/2097152 bytes
+Highest expansion depth: 6/40
+Expensive parser function count: 4/100
+Lua time usage: 0.610/7.000 seconds
+Lua virtual size: 9.04 MB/50 MB
+Lua estimated memory usage: 0 B
+-->
+
+<!-- Saved in parser cache with key pathofexile_gamepedia:pcache:idhash:2169-0!*!0!!en!2!* and timestamp 20150810101748 and revision id 138025
+ -->
+</div>												<div class="printfooter">
+						Retrieved from "<a href="http://pathofexile.gamepedia.com/index.php?title=List_of_unique_axes&amp;oldid=138025">http://pathofexile.gamepedia.com/index.php?title=List_of_unique_axes&amp;oldid=138025</a>"						</div>
+																		<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/Category:Contents" title="Category:Contents">Categories</a>: <ul><li><a href="/Category:Unique_axes" title="Category:Unique axes">Unique axes</a></li><li><a href="/Category:Item_lists" title="Category:Item lists">Item lists</a></li></ul></div></div>																		<div class="visualClear"></div>
+											</div>
+					<!-- /bodyContent -->
+				</div>
+				<!-- second ad placement -->
+								<div class="btflb">
+					<div id='cdm-zone-04'></div>				</div>
+								<!-- /second ad placement -->
+			</div>
+			<!-- /content -->
+			<div id="footer" role="contentinfo">
+									<ul id="footer-info">
+													<li id="footer-info-lastmod"> This page was last modified on <time itemprop="datePublished" datetime="2015-23-07T18:57">23 July 2015, at 18:57</time>.</li>
+													<li id="footer-info-copyright">Content is available under <a class="external" rel="nofollow" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">CC BY-NC-SA 3.0</a> unless otherwise noted.  Path of Exile content and materials are trademarks and copyrights of Grinding Gear Games or its licensors. All rights reserved.<br />
+This site is a part of Curse, Inc. and is not affiliated with Grinding Gear Games.</li>
+											</ul>
+									<ul id="footer-places">
+													<li id="footer-places-privacy"><a href="/Path_of_Exile_Wiki:Privacy_policy" title="Path of Exile Wiki:Privacy policy">Privacy policy</a></li>
+													<li id="footer-places-about"><a href="/Path_of_Exile_Wiki:About" title="Path of Exile Wiki:About">About Path of Exile Wiki</a></li>
+													<li id="footer-places-disclaimer"><a href="/Path_of_Exile_Wiki:General_disclaimer" title="Path of Exile Wiki:General disclaimer">Disclaimers</a></li>
+													<li id="footer-places-mobileview"><a href="//pathofexile.gamepedia.com/index.php?title=List_of_unique_axes&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+											</ul>
+													<ul id="footer-icons" class="noprint">
+						<li id="footer-copyrightico">
+							<a href="http://creativecommons.org/licenses/by-nc-sa/3.0/"><img src="http://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png" alt="CC BY-NC-SA 3.0" width="88" height="31" /></a>
+						</li>
+						<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/skins/common/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" width="88" height="31" /></a>
+							<a href="http://help.gamepedia.com/What_is_Hydra"><img src="/extensions/Curse/Icons/poweredbyhydra.png" alt="Powered by Hydra" width="88" height="31" /></a>
+						</li>
+					</ul>
+								<div style="clear:both"></div>
+			</div>
+		</div>
+		<div id="footer-push"></div>
+	</div>
+		<script>/*<![CDATA[*/window.jQuery && jQuery.ready();/*]]>*/</script><script>if(window.mw){
+mw.loader.state({"site":"loading","user":"ready","user.groups":"ready"});
+}</script>
+<script>if(window.mw){
+mw.loader.load(["ext.Social","mediawiki.action.view.postEdit","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.vector.collapsibleNav","mw.MwEmbedSupport.style"],null,true);
+}</script>
+<script src="//pathofexile.gamepedia.com/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=scripts&amp;skin=hydra&amp;*"></script>
+<footer id="footer" role="complimentary" >
+	<div class="footer-links">
+				<a href="http://www.gamepedia.com" class="curse">Gamepedia powered by Curse</a>
+		<ul class="social">
+			<li><a href="https://www.facebook.com/CurseGamepedia" class="fb">Facebook</a></li>
+			<li><a href="https://twitter.com/CurseGamepedia" class="tw">Twitter</a></li>
+			<li><a href="https://www.youtube.com/CurseGP" class="yt">Youtube</a></li>
+			<li><a href="http://www.curse.com/newsletter" class="nl">Newsletter</a></li>
+		</ul>
+					<ul class="you">
+									<li><a href="/index.php?title=Special:UserLogin&returnto=List+of+unique+axes" id="login-link" class="sign-in">Sign In</a></li>
+									<li><a href="/index.php?title=Special:UserLogin&returnto=List+of+unique+axes&type=signup" class="register" id="register-link">Register</a></li>
+										<li><a href="http://www.curseinc.com/careers" class="careers">Careers</a></li>
+			<li><a href="http://support.curse.com" class="help">Help</a></li>
+					</ul>
+			<ul class="more">
+					<li><a href="http://www.curseinc.com/" class="about">About Curse</a></li>
+			<li><a href="http://www.curseinc.com/audience" class="advertise">Advertise</a></li>
+			<li><a href="http://www.curse.com/terms" class="tos">Terms of Service</a></li>
+			<li><a href="http://www.curse.com/privacy" class="privacy-policy">Privacy Policy</a></li>
+		</ul>
+		<span class="copyright">Copyright 2005-2015, Curse Inc.</span>
+	</div>
+			<div class="ad-placement ad-main-med-rect-footer">
+			<div id='cdm-zone-03'></div>		</div>
+	</footer>
+
+<!-- Google Analytics -->
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(
+        ['_setAccount', 'UA-35871056-26'],
+        ['_setDomainName', 'gamepedia.com'],
+        ['_addIgnoredRef', 'gamepedia.com'],
+        ['_trackPageview'],
+        ['b._setAccount', 'UA-1045810-22'],
+        ['b._setDomainName', 'gamepedia.com'],
+        ['b._addIgnoredRef', 'gamepedia.com'],
+        ['b._trackPageview'],
+        ['c._setAccount', 'UA-35871056-4'],
+        ['c._setDomainName', 'gamepedia.com'],
+        ['c._addIgnoredRef', 'gamepedia.com'],
+        ['c._trackPageview']
+
+);
+(function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+<!-- End Google Analytics -->
+<!-- Begin comScore -->
+<script>
+var _comscore = _comscore || [];
+_comscore.push({ c1: "2", c2: "6035118" });
+(function() {
+	var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;
+	s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
+	el.parentNode.insertBefore(s, el);
+})();
+</script>
+<noscript>
+<img src="http://b.scorecardresearch.com/p?c1=2&amp;c2=6035118&amp;cv=2.0&amp;cj=1" />
+</noscript>
+<!-- End comScore -->
+
+<!-- Begin Nielsen -->
+<script type="text/javascript">
+(function () {
+	var d = new Image(1, 1);
+	d.onerror = d.onload = function () {
+		d.onerror = d.onload = null;
+	};
+	d.src = ["//secure-us.imrworldwide.com/cgi-bin/m?ci=us-603339h&cg=0&cc=1&si=", escape(window.location.href), "&rp=", escape(document.referrer), "&ts=compact&rnd=", (new Date()).getTime()].join('');
+})();
+</script>
+<noscript>
+<div><img src="//secure-us.imrworldwide.com/cgi-bin/m?ci=us-603339h&amp;cg=0&amp;cc=1&amp;ts=noscript" width="1" height="1" alt="" /></div>
+</noscript>
+<!-- End Nielsen -->
+<script>if(window.mw){
+mw.config.set({"wgBackendResponseTime":326});
+}</script>
+		<!-- Lotame -->
+<script src="http://tags.crwdcntrl.net/c/3613/cc.js?ns=_cc3613" id="LOTCC_3613"></script>
+<script>
+_cc3613.bcp();
+</script>
+<img src="http://bcp.crwdcntrl.net/5/c=3613" width="1" height="1"/>
+<!-- End Lotame -->
+
+<!--Adblock Check--> 
+<script type="text/javascript" src="http://media.curse.com/Content/Ads/JS/BSAds3.js"></script> <script type="text/javascript"> jQuery(document).ready(checkAds()); function checkAds(){if (document.getElementById('adsense')!=undefined){document.write("<script>_gaq.push(['_trackEvent', 'Adblock', 'Unblocked', 'false',,true]);</sc" + "ript>");}else{document.write("<script>_gaq.push(['_trackEvent', 'Adblock', 'Blocked', 'true',,true]);</sc" + "ript>");}} </script>
+ <!--End Adblock Check-->
+<!-- Start PubMP -->
+<script type="text/javascript" src="http://ads.pubmatic.com/AdServer/js/showad.js#PIX&ptask=DSP&SPug=1"></script> 
+<!-- End PubMP -->
+
+<div id='cdm-zone-end'></div>			<script src="http://media-titanium.cursecdn.com/shared-assets/current/anchor.js?id=2757821"></script>
+			<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"75f4858b7a","applicationID":"1909498","transactionName":"YlVXbREHWksEUkVdCVsfYEsKSV1WAVRJGhZdQA==","queueTime":0,"applicationTime":378,"ttGuid":"","agentToken":"","atts":"ThJUG1kdSUU=","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-632.min.js"}</script></body>
+</html>
